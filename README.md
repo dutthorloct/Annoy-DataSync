@@ -20,6 +20,7 @@
   - [Setup](#Setup)
   - [Data Processing](#Data-Processing)
   - [Training](#Training)
+- [License](#License)
 - [Citation](#Citation)
 - [Acknowledgement](#Acknowledgement)
 
@@ -37,11 +38,11 @@ Annoy-DataSync is a novel approach that transforms code-based reasoning patterns
 
 #### Dataset
 
-|Dataset|Link|
-|-|-|
-|Annoy-PythonEdu-Rs|[🤗](https://huggingface.co/datasets/safaf3e23/Annoy-Pyedu-Rs)|
-|Annoy-PythonEdu-Rs-Raw|[🤗](https://huggingface.co/datasets/safaf3e23/Annoy-PyEdu-Rs-Raw)|
-|LCO Benchmark|[🤗](https://huggingface.co/datasets/safaf3e23/LCO)|
+|Dataset|Link|License notes|
+|-|-|-|
+|Annoy-PythonEdu-Rs|[🤗](https://huggingface.co/datasets/safaf3e23/Annoy-PyEdu-Rs)|`other` — derived from Python-Edu / The Stack v2 and subject to the original source-code licenses|
+|Annoy-PythonEdu-Rs-Raw|[🤗](https://huggingface.co/datasets/safaf3e23/Annoy-PyEdu-Rs-Raw)|`other` — derived from Python-Edu / The Stack v2 and subject to the original source-code licenses|
+|LCO Benchmark|[🤗](https://huggingface.co/datasets/safaf3e23/LCO)|See the dataset card for benchmark-specific licensing details|
 
 Due to our collaborators' compliance requirements, we only release the PythonEdu-Rs subset of the Annoy(++) dataset.
 
@@ -50,7 +51,7 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
 #### Models
 <table>
     <tr>
-        <th rowspan="2">Base Model / Training</th>
+        <th rowspan="2">Base Model / Training</td>
         <th colspan="2">Annoy</th>
         <th colspan="2">Annoy++</th>
     </tr>
@@ -211,6 +212,12 @@ By doing so, you can get data `data/spec_demo_final.jsonl` with the same format 
 
 ### Training
 You can use any popular training framework to train your model like [llama-factory](https://github.com/hiyouga/LLaMA-Factory). 
+
+## License
+
+The released `Annoy-PythonEdu-Rs` and `Annoy-PythonEdu-Rs-Raw` datasets are marked with the Hugging Face license value `other`. They are built from the Python-Edu subset of `HuggingFaceTB/smollm-corpus`, whose file contents come from `bigcode/the-stack-v2-train-full-ids` / The Stack v2. The Stack v2 contains source code from repositories with many different original licenses. Any use of these datasets must therefore comply with the original licenses of the underlying source-code files, including attribution or other obligations where applicable.
+
+For provenance, the raw release keeps source metadata such as `blob_id`, `repo_name`, `path`, and `source` when available. Please also follow the usage conditions documented by HuggingFaceTB for Python-Edu / SmolLM-Corpus and by BigCode for The Stack v2.
 
 ## Acknowledgement
 We thank Koala NN, TCLV and OMEN for their valuable feedback and suggestions! 🤗🤗🤗
