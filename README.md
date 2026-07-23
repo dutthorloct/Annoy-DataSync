@@ -51,7 +51,7 @@ Due to our collaborators' compliance requirements, we only release the PythonEdu
 #### Models
 <table>
     <tr>
-        <th rowspan="2">Base Model / Training</td>
+        <th rowspan="2">Base Model / Training</th>
         <th colspan="2">Annoy</th>
         <th colspan="2">Annoy++</th>
     </tr>
